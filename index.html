@@ -110,19 +110,20 @@
 			<img src="https://cdn.discordapp.com/attachments/829555283352485929/1095241260933066782/MOSHED-2023-4-11-1-57-33.gif" alt="logo gif" />
 		</div>
 		<div class="icon-slot">
-			<a href="https://soundcloud.com/moreovermedia"><img class="icon" src="https://cdn.discordapp.com/attachments/829555283352485929/1095239506329878588/3fc0a5b672328e67c0aa15520f1f7d8e.png" alt="soundcloud" /></a>
-			<a href="https://open.spotify.com/artist/4wiS0iDCB2VU3JahjjPpzh"><img class="icon" src="https://cdn.discordapp.com/attachments/829555283352485929/1095239506602512394/spotify.png" alt="spotify" /></a>
-			<a href="https://www.tiktok.com/@moreovermedia"><img class="icon" src="https://cdn.discordapp.com/attachments/829555283352485929/1095239506854166529/tiktok.png" alt="tiktok" /></a>
-			<a href="https://twitter.com/MoreOverMusic"><img class="icon" src="https://cdn.discordapp.com/attachments/829555283352485929/1095239507084840980/twitter.png" alt="twitter" /></a>
+			<a href="https://soundcloud.com/moreovermedia" class="icon-link"><img class="icon" src="https://cdn.discordapp.com/attachments/829555283352485929/1095239506329878588/3fc0a5b672328e67c0aa15520f1f7d8e.png" alt="soundcloud" /></a>
+			<a href="https://open.spotify.com/artist/4wiS0iDCB2VU3JahjjPpzh" class="icon-link"><img class="icon" src="https://cdn.discordapp.com/attachments/829555283352485929/1095239506602512394/spotify.png" alt="spotify" /></a>
+			<a href="https://www.tiktok.com/@moreovermedia" class="icon-link"><img class="icon" src="https://cdn.discordapp.com/attachments/829555283352485929/1095239506854166529/tiktok.png" alt="tiktok" /></a>
+			<a href="https://twitter.com/MoreOverMusic" class="icon-link"><img class="icon" src="https://cdn.discordapp.com/attachments/829555283352485929/1095239507084840980/twitter.png" alt="twitter" /></a>
 		</div>
 		<div class="text">
 	  		<p>incoming transmission...</p>
 		</div>
 	</div>
 	<script>
-		const icons = document.querySelectorAll('.icon');
+		const icons = document.querySelectorAll('.icon-link');
 		icons.forEach(icon => {
 			icon.addEventListener('click', function(event) {
+				// Ripple effect code remains the same
 				event.preventDefault();
 				const x = event.clientX - event.target.offsetLeft;
 				const y = event.clientY - event.target.offsetTop;
