@@ -82,26 +82,6 @@
 			text-align: center;
 			padding: 10px;
 		}
-		.ripple {
-			position: absolute;
-			width: 20px;
-			height: 20px;
-			border-radius: 50%;
-			background-color: rgba(255, 255, 255, 0.5);
-			opacity: 0;
-			animation: ripple-effect 1s linear;
-			pointer-events: none;
-		}
-		@keyframes ripple-effect {
-			from {
-				transform: scale(0);
-				opacity: 1;
-			}
-			to {
-				transform: scale(4);
-				opacity: 0;
-			}
-		}
 	</style>
 </head>
 <body>
@@ -119,32 +99,5 @@
 	  		<p>incoming transmission...</p>
 		</div>
 	</div>
-	<script>
-    		const icons = document.querySelectorAll('.icon-link');
-    		icons.forEach(icon => {
-        		icon.addEventListener('click', function (event) {
-
-            			const ripple = document.createElement('span');
-            			ripple.classList.add('ripple');
-
-            			const rect = icon.getBoundingClientRect();
-            			const size = Math.max(rect.width, rect.height);
-            			const x = event.clientX - rect.left - size / 2;
-            			const y = event.clientY - rect.top - size / 2;
-
-            			ripple.style.width = ripple.style.height = `${size}px`;
-            			ripple.style.left = `${x}px`;
-            			ripple.style.top = `${y}px`;
-
-            			icon.appendChild(ripple);
-
-            			setTimeout(() => {
-                			ripple.remove();
-                			window.location.href = icon.getAttribute('href');
-            			}, 1000);
-        		});
-    		});
-	</script>
-
 </body>
 </html>
