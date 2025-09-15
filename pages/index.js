@@ -6,7 +6,7 @@ const MoreOverPage = () => (
     <Head>
       <title>MoreOver</title>
       <meta property="og:title" content="MoreOver" />
-      <meta name="theme-color" content="#FFFFFF" />
+      <meta name="theme-color" content="#000000" />
       <meta property="og:image" content="https://media.discordapp.net/attachments/829555283352485929/1095241260933066782/MOSHED-2023-4-11-1-57-33.gif?ex=68c861a9&is=68c71029&hm=7ef8e3647cdbb1ab847e0a73cb4937b660638da0b8aad7d0e0d6aa932a1164e4&=" />
       <meta property="og:url" content="https://www.moreovermusic.com/" />
       <meta property="og:type" content="website" />
@@ -125,6 +125,7 @@ const MoreOverPage = () => (
 );
 
 export default MoreOverPage;
+
 
 
 
